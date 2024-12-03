@@ -9,6 +9,8 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - ./application:/var/www/html
+    ports:
+      - "9003:9003"
     networks:
       - network
 
