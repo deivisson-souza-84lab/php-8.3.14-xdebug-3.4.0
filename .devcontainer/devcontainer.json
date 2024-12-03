@@ -1,0 +1,27 @@
+{
+  "name": "PHP Development Environment",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "php",
+  "workspaceFolder": "/var/www/html",
+  "forwardPorts": [
+    80
+  ],
+  // "postCreateCommand": [
+  //   "composer install",
+  // ],
+  "remoteUser": "www-data",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php",
+        "php.executablePath": "/usr/local/bin/php",
+        "php.debug.remotePort": 9003
+      },
+      "extensions": [
+        "xdebug.php-debug",
+        "bmewburn.vscode-intelephense-client",
+        "zobo.php-intellisense"
+      ]
+    }
+  }
+}
