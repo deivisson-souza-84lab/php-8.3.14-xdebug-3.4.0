@@ -9,7 +9,7 @@
       "hostname": "localhost",
       "log": true,
       "pathMappings": {
-        "/var/www/html": "${workspaceFolder}"
+        "/var/www/html": "${workspaceFolder}/application"
       }
     }
   ]
