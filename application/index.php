@@ -1,5 +1,7 @@
 <?php
 
-$v = 1;
+$v = new DateTime();
 
-xdebug_info();
+echo '<h1>PHP-8.3.14</h1>';
+
+echo $v->format('Y-m-d H:i:s');
